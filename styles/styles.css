@@ -30,10 +30,10 @@ main {
 }
 
 aside {
-    width: 400px;
-    margin: 10px;
+    width: 20em;
+    margin: 1em;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 15px;
+    padding: 1rem;
     background-color: #eee;
     color: #333;
     text-align: center;
@@ -50,8 +50,8 @@ main img {
 }
 
 footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
+    margin-top: 1em;
+    border-top: 1em solid #000;
     text-align: center;
 
 }
