@@ -1,24 +1,6 @@
-:root{
-    --nav-bg-color: rgb(5, 111, 197);
-    --nav-padding: 10px;
-    --h1-color: steelblue;
-
-
-}
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-
-
 nav {
-    background-color: var(--nav-bg-color);
-    padding: (--nav-padding);
+    background-color: steelblue;
+    padding: 10px;
 }
 
 nav a {
@@ -29,7 +11,6 @@ nav a {
 
 h1 {
     color: steelblue;
-    padding: 10px;
 }
 
 img {
@@ -41,29 +22,23 @@ img {
 }
 
 P {
-    padding: 10px;
+    padding: 0;
 }
 
 main {
     max-width: 840px;
-    /* padding-left: 20px */
 }
 
 aside {
     width: 20rem;
-    /*margin: 1rem;*/
-    /*border: 1px solid rgba(0, 0, 0, 0.2);*/
-    /*padding: 1rem;*/
-    /* background-color: #eee; */
-    /* color: #333; */
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
     text-align: center;
 }
-aside h2 {
-    position: relative;
-    top: 0;
-    left: 10px;
-    
-}
+
 aside img {
     width: 200px;
     height: auto;
@@ -72,7 +47,6 @@ aside img {
 main img {
     width: 150px;
     height: auto;
-    float: right;
 }
 
 footer {
@@ -82,13 +56,3 @@ footer {
 
 }
 /* Here is the end of week2 activity */
-
-/* Class Selectors */
-
-.box {
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    background-color: #ddd;
-    color: #000;
-}
