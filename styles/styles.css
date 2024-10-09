@@ -1,6 +1,20 @@
+:root{
+    --nav-bg-color: rgb(5, 111, 197);
+    --nav-padding: 10px;
+    --h1-color: steelblue;
+
+
+}
+
+
+
+
+
+
+
 nav {
-    background-color: steelblue;
-    padding: 10px;
+    background-color: var(--nav-bg-color);
+    padding: (--nav-padding);
 }
 
 nav a {
@@ -47,6 +61,7 @@ aside img {
 main img {
     width: 150px;
     height: auto;
+    b
 }
 
 footer {
