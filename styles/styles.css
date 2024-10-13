@@ -1,8 +1,15 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --image-width: 150px;
 }
 nav {
-    background-color: steelblue;
+    background-color: rgba(0, 81, 148, 0.966);
     padding: 10px;
 }
 
@@ -13,7 +20,7 @@ nav a {
 }
 
 h1 {
-    color: steelblue;
+    color: rgb(7, 128, 226);
 }
 
 img {
@@ -34,22 +41,30 @@ main {
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    /* margin: 1rem; */
+    /* border: 1px solid rgba(0, 0, 0, 0.2); */
+    /* padding: 1rem; */
+    /* background-color: #eee; */
+    /* color: #333; */
     text-align: center;
+    position: relative;
 }
 
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
+}
 aside img {
     width: 200px;
     height: auto;
+
 }
 
 main img {
     width: var(--image-width);
     height: auto;
+    float: right;
 }
 
 footer {
@@ -59,3 +74,13 @@ footer {
 
 }
 /* Here is the end of week2 activity */
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+}
+
