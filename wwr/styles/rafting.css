@@ -82,11 +82,21 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     width: 800px;
-    padding: 2px;
+    padding: 1px;
     background-color: rgba(9, 41, 129, 0.438); /* Light background for readability */
     border-radius: 5px; /* Rounded corners */
 }
 
+.hero article h2 {
+    font-size: 13px;
+    color: #e7ebec;
+    padding: 10px;
+    line-height: 1rem;
+    position: top;
+    left: 2px;
+    top: -30px;
+    
+}
 .hero article img {
     width: 150px; /* Adjust size as needed */
     margin-right: 20px;
