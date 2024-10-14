@@ -6,6 +6,7 @@
     --accent2-color: #2D649F;    /* Medium Blue */
     --text-color: #18435A;       /* Dark Grayish Blue */
 }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Suravaram&display=swap');
 
 /* General Styles */
 body {
