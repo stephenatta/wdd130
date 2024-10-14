@@ -92,7 +92,7 @@ nav a:hover {
     color: #e7ebec;
     padding: 10px;
     line-height: 1rem;
-    position: top;
+    position: relative;
     left: 2px;
     top: -30px;
     
