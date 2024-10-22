@@ -99,9 +99,7 @@ nav a:hover {
     width: 120px;
     position: absolute;
     right: 10px;
-   
-    
-
+    bottom: 15px;
 }
 
 .hero article p {
@@ -127,9 +125,8 @@ nav a:hover {
 
 .history-title {
     position: absolute;
-    top: -45px;
+    top: -30px;
     left: 50%;
-
     transform: translateX(-50%);
     font-size: 36px;
     color: var(--secondary-color);
@@ -166,7 +163,7 @@ nav a:hover {
     color: var(--secondary-color);
     margin: 10px;
     position: absolute;
-    top: -30px; /* Adjusted positioning for h2 */
+    top: -10px; /* Adjusted positioning for h2 */
     left: 50%;
     transform: translateX(-50%);
 }
