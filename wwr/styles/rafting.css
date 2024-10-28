@@ -7,6 +7,17 @@
     --text-color: #18435A;       /* Dark Grayish Blue */
 }
 
+
+/* Updated CSS with Google Fonts */
+body {
+    font-family: 'Merriweather', serif;
+  }
+  
+  /* For labels, input, buttons, etc., you can use Roboto */
+  label, input, button, select, textarea {
+    font-family: 'Roboto', sans-serif;
+  }
+  
 /* General Styles */
 body {
     font-family: 'Suravaram', serif;
@@ -201,7 +212,7 @@ footer {
 footer nav {
     display: flex;
     justify-content: flex-end; /* Align icons to the right */
-    gap: 2px;
+    gap: 2.5px;
     position: absolute;
     right: 5%; /* Adjust this value to align with your content */
     top: 50%;
@@ -216,4 +227,98 @@ footer nav a img {
 
 footer nav a img:hover {
     transform: scale(1.3);
+}
+
+
+/* Contact Information Section */
+.contact-info {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+/* Employee Profiles Section */
+.employee-profiles {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    color: #fff;
+    background-color: var(--accent2-color);
+}
+
+.employee-profiles .profile {
+    text-align: center;
+}
+
+.employee-profiles img {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Contact Form */
+.contact-form {
+    padding: 20px;
+    background-color: var(--accent1-color);
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.contact-form form {
+    display: grid;
+    gap: 1rem;
+}
+
+.contact-form label,
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea,
+.contact-form button {
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.contact-form textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Button Styling */
+.contact-form button {
+    padding: 0.75rem;
+    background-color: rgb(2, 56, 138);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.contact-form button:hover {
+    background-color: darkgreen;
+}
+
+
+footer nav a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+footer nav a img:hover {
+    transform: scale(1.3);
+}
+
+/* Footer Wireframe Link Styling */
+.footer-wireframe-link {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    margin-right: 10px; /* Optional spacing adjustment */
+}
+
+.footer-wireframe-link:hover {
+    color: var(--secondary-color); /* Light blue hover effect */
 }
