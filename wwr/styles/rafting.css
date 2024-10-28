@@ -322,3 +322,11 @@ footer nav a img:hover {
 .footer-wireframe-link:hover {
     color: var(--secondary-color); /* Light blue hover effect */
 }
+
+
+/* Google Map Styling */
+.google-map {
+    border: 0;
+    width: 100%;
+    height: 300px; /* Ensure height is specified in CSS */
+}
