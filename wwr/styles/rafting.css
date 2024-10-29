@@ -7,20 +7,18 @@
     --text-color: #18435A;       /* Dark Grayish Blue */
 }
 
-
 /* Updated CSS with Google Fonts */
 body {
     font-family: 'Merriweather', serif;
-  }
-  
-  /* For labels, input, buttons, etc., you can use Roboto */
-  label, input, button, select, textarea {
+}
+
+/* For labels, input, buttons, etc., you can use Roboto */
+label, input, button, select, textarea {
     font-family: 'Roboto', sans-serif;
-  }
-  
+}
+
 /* General Styles */
 body {
-    font-family: 'Suravaram', serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -42,7 +40,6 @@ header {
 
 header img {
     width: 100px; 
-    
 }
 
 nav {
@@ -103,7 +100,7 @@ nav a:hover {
     padding: 1px;
     background-color: rgba(9, 41, 129, 0.438);
     border-radius: 5px;
-     bottom: 80px; /* Reduced from 10px to move it upwards */
+    bottom: 80px; /* Reduced from 10px to move it upwards */
 }
 
 .hero article img {
@@ -121,7 +118,6 @@ nav a:hover {
     padding-left: 20px;
     z-index: 1; /* Add this line */
     margin-right: 170px; /* Add this line, adjust according to image width */
-  
 }
 
 /* History Section */
@@ -229,7 +225,6 @@ footer nav a img:hover {
     transform: scale(1.3);
 }
 
-
 /* Contact Information Section */
 .contact-info {
     text-align: center;
@@ -262,6 +257,8 @@ footer nav a img:hover {
     background-color: var(--accent1-color);
     max-width: 650px;
     margin: 0 auto;
+    border-radius: 8px; /* Rounded corners for the form */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .contact-form form {
@@ -269,20 +266,25 @@ footer nav a img:hover {
     gap: 1rem;
 }
 
-.contact-form label,
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea,
-.contact-form button {
-    font-family: 'Roboto', sans-serif;
-    
+.contact-form label {
+    font-weight: bold; /* Bold labels for better visibility */
 }
 
+.contact-form input[type="text"],
+.contact-form input[type="email"],
 .contact-form textarea {
-    padding: 0.5rem;
+    padding: 10px; /* More padding for better touch targets */
     font-size: 1rem;
     border-radius: 5px;
     border: 1px solid #ccc;
+    transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: var(--secondary-color); /* Highlight border on focus */
+    outline: none; /* Remove outline */
 }
 
 /* Button Styling */
@@ -294,21 +296,37 @@ footer nav a img:hover {
     border-radius: 0.5rem;
     cursor: pointer;
     font-size: 1rem;
+    transition: background-color 0.3s; /* Smooth background color transition */
 }
 
 .contact-form button:hover {
     background-color: darkgreen;
 }
 
-
-footer nav a img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease;
+/* Table Styling */
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Merge borders */
+    margin: 20px 0; /* Spacing around table */
 }
 
-footer nav a img:hover {
-    transform: scale(1.3);
+table, th, td {
+    border: 1px solid var(--text-color); /* Border color */
+}
+
+th, td {
+    padding: 12px; /* Padding for cells */
+    text-align: left; /* Align text to the left */
+}
+
+th {
+    background-color: var(--secondary-color); /* Header background color */
+    color: white; /* Header text color */
+}
+
+td {
+    background-color: var(--accent1-color); /* Cell background color */
+    color: var(--text-color); /* Cell text color */
 }
 
 /* Footer Wireframe Link Styling */
@@ -316,17 +334,342 @@ footer nav a img:hover {
     color: white;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
-    margin-right: 10px; /* Optional spacing adjustment */
+    font-weight: bold;
 }
 
 .footer-wireframe-link:hover {
-    color: var(--secondary-color); /* Light blue hover effect */
+    color: var(--secondary-color);
+}
+
+:root {
+    /* Color Scheme */
+    --primary-color: #061d33;   /* Dark Blue */
+    --secondary-color: #3781BE;  /* Light Blue */
+    --accent1-color: #e7ebec;    /* Light Gray */
+    --accent2-color: #2D649F;    /* Medium Blue */
+    --text-color: #18435A;       /* Dark Grayish Blue */
+}
+
+/* Updated CSS with Google Fonts */
+body {
+    font-family: 'Merriweather', serif;
+}
+
+/* For labels, input, buttons, etc., you can use Roboto */
+label, input, button, select, textarea {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* General Styles */
+.home-page {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+    background-color: var(--accent1-color);
+    max-width: 1200px;
+    margin: 0 auto; /* Center the content */
+}
+
+/* Header Styles */
+.home-page header {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Grid layout with two columns */
+    align-items: center;
+    padding: 10px;
+    background-color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.home-page header img {
+    width: 100px; 
+}
+
+.cta-button {
+    color: rgb(255, 246, 246);
+}
+.home-page nav {
+    display: flex;
+    justify-content: flex-end; /* Align navigation to the right */
+    gap: 20px; /* Spacing between links */
+}
+
+.home-page nav a {
+    text-decoration: none;
+    color: var(--accent1-color);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+
+.home-page nav a:hover {
+    color: var(--secondary-color);
+}
+
+/* Hero Section */
+.home-page .hero {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.home-page .hero img {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
 }
 
 
-/* Google Map Styling */
-.google-map {
-    border: 0;
+
+.home-page .hero article {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    padding: 1px;
+    background-color: rgba(9, 41, 129, 0.438);
+    border-radius: 5px;
+    bottom: 80px; /* Reduced from 10px to move it upwards */
+}
+
+.home-page .hero article img {
+    width: 120px;
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+}
+
+.home-page .hero article p {
+    font-size: 18px;
+    color: var(--accent1-color);
+    max-width: 700px;
+    text-align: left;
+    padding-left: 20px;
+    z-index: 1; /* Add this line */
+    margin-right: 170px; /* Add this line, adjust according to image width */
+}
+
+/* Newsletter Section */
+.home-page .newsletter {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--accent1-color);
+    border-radius: 8px; /* Rounded corners for the section */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.home-page .newsletter h2 {
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+.home-page .contact-form {
+    display: grid;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto; /* Center the form */
+}
+
+.home-page .contact-form label {
+    font-weight: bold;
+}
+
+.home-page .contact-form input {
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px; /* Rounded corners for input */
+}
+
+.home-page .contact-form button {
+    padding: 10px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 4px; /* Rounded corners for button */
+    cursor: pointer;
+}
+
+.home-page .contact-form button:hover {
+    background-color: var(--primary-color);
+}
+
+/* Grid Layout for Site Offerings */
+.home-page .site-offerings {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.home-page .site-offerings .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Spacing between grid items */
+}
+
+.home-page .grid-item {
+    background-color: lightblue;
+    border-radius: 8px; /* Rounded corners for grid items */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 15px; /* Padding within the grid items */
+    text-align: center;
+}
+
+.home-page .grid-item img {
+    max-width: 100%;
+    border-radius: 4px; /* Rounded corners for images */
+}
+
+.home-page .grid-item h3 {
+    margin: 10px 0;
+    color: var(--primary-color);
+}
+
+/* Footer Styles */
+.home-page footer {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    margin-top: 20px;
+}
+
+.home-page footer a {
+    color: var(--accent1-color);
+}
+
+.home-page footer nav {
+    margin-top: 10px;
+}
+
+.home-page footer img {
+    width: 30px; /* Adjust icon size */
+    margin: 0 10px; /* Spacing between icons */
+}
+
+
+
+/* Trips Page Styling */
+.trips-page .hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.trips-page .hero img {
     width: 100%;
-    height: 300px; /* Ensure height is specified in CSS */
+    height: auto;
+}
+
+.trips-page .hero h2 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.trips-page .hero p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+}
+
+.trips-page .hero .cta-button {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #0056b3;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.trips-page .trip-details {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #f8f8f8;
+}
+
+.trips-page .trip-details h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.trips-page .trip-grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.trips-page .trip {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 280px;
+}
+
+.trips-page .trip img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.trips-page .trip h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #0056b3;
+}
+
+.trips-page .trip p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.trips-page .trips-table {
+    padding: 2rem;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.trips-page .trips-table h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.trips-page .trips-table table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.trips-page .trips-table th,
+.trips-page .trips-table td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.trips-page .trips-table th {
+    background-color: #0056b3;
+    color: white;
+    font-weight: 500;
+}
+
+.trips-page .trips-table td {
+    font-size: 1rem;
 }
